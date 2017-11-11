@@ -14,7 +14,7 @@ def round()
   while guess_number > 0:
     if turn == 0:
        word = input(player_1 + ", what's the word? : ") # I want to find a way to hide the word from the console after it is inputted
-       print "You have put in a " + word_length + " letter word!"
+       print("You have put in a " + word_length + " letter word!")
        chars = []
        guessed_chars = []
        correct_chars = []
@@ -40,11 +40,11 @@ def round()
                       guess_number -= 1
                       print("You have " + guess_number + " guesses left! Keep it up!")
             else:
-                print g + "is not in " + word
+                print(g + "is not in " + word)
                 guess_number -= 1
     elif turn == 1:
        word = input(player_2 + ", what's the word? : ")
-       print "You have put in a " + word_length + " letter word!"
+       print("You have put in a " + word_length + " letter word!")
        chars = []
        guessed_chars = []
        correct_chars = []
@@ -70,16 +70,16 @@ def round()
                       guess_number -= 1
                       print("You have " + guess_number + " guesses left! Keep it up!")
         else:
-            print g + "is not in " + word
+            print(g + "is not in " + word)
             guess_number -= 1 
   else:
     print "uh-oh"
     if turn == 0:
-        print player_2 + "has run out of turns"
-        turn ++ 1
+        print(player_2 + "has run out of turns")
+        turn += 1
     else:
-        print player_1 + "has run out of turns"
-        turn +- 1
+        print(player_1 + "has run out of turns")
+        turn -= 1
   
   
 round() 
