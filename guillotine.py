@@ -15,7 +15,7 @@ word_length = len(word)
 def round(turn):
   win_count_1 = 0
   win_count_2 = 0
-  while guess_number > 0 && sum(win_count_1, win_count_2) < 5:  
+  while guess_number > 0 and sum(win_count_1, win_count_2) < 5:  
     if turn == 0:
         player_A = player_1
         player_B = player_2
