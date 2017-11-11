@@ -6,6 +6,7 @@ import getpass
 turn = 0
 guess_number = 5
 
+
 def round_setup()
   player_1 = Input("What's your name Player 1? : ")
   print "Nice to meet you " + player_1
@@ -32,7 +33,11 @@ def letter_check()
    print g + "is not in " + word
   
   if total_letters == word_length:
-    print word
+    print "Congrats! You found all the letters for " + word
+    if turn == 0:
+      turn ++ 1
+    else:
+      turn +- 1
   else:
     continue
     
@@ -48,21 +53,25 @@ def guessing_turn()
       letter_check(g)
     else:
       print "uh-oh"
+  else:
+    if turn == 0:
+      print player_2 + "has run out of turns"
+      turn ++ 1
+    else:
+      print player_1 + "has run out of turns"
+      turn +- 1
   guess_number +- 1
-
-
-
-
-def change_turn()
- if 
  
- 
- 
+game_count = 5 
 def run()
-  __init__():
-  round_setup()
-  word_to_guess()
+  while game_count > 0:
+    round_setup()
+    word_to_guess()
+    guessing_turn()
+    game_count +- 1
   
+# Let's try it!
+run()
  
  
  
