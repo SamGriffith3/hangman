@@ -1,10 +1,10 @@
 
 
-def round_setup()
-  player_1 = Input("What's your name Player 1? : ")
-  print "Nice to meet you " + player_1
-  player_2 = Input("How about your name Player 2? : ")
-  print "Suck it " player_2
+def round()
+  player_1 = input("What's your name Player 1? : ")
+  print("Nice to meet you " + player_1)
+  player_2 = input("How about your name Player 2? : ")
+  print("Suck it " player_2)
 
   turn = 0
   guess_number = 5
@@ -81,8 +81,8 @@ def round_setup()
         print player_1 + "has run out of turns"
         turn +- 1
   
-
   
+round() 
 
 
 
